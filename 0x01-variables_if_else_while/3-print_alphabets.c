@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
  *    main - Entry block
- *    Description: Get a random it with 5
- *    Return: Always 0 
+ *    Description: print the alphabet in lower case
+ *    and the in uppercase, follow by a new line
+ *    Return: 0 
  */
  int main(void)
  {
@@ -16,8 +16,18 @@
 	        
 	        c++;
 	}
+	
+	c = 'A'
+	
+	while (c <= 'z')
+	{
 
-
-	putchar('\n');
-	return (0);
+	
+		putchar('\n');
+	
+		c++;
+	}
+	
+	purchar('\n');
+	return (0);	
 }
