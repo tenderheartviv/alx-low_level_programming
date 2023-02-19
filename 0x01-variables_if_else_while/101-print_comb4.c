@@ -1,64 +1,35 @@
-#include <stdio.h>
-#include <stdlib.h>
+include <stdio.h>
+
 /**
- * main - main block
- * Description:write a progress that prints all possible
- * different combination of the digits
- * number must be separated by ,, followed by a space 
- * the two digits must be different
- * 01 and 10 are considered the same combination of the two digits 0 and 1
- * Print only the smallest combination of three digits
- * Numbers should be printed in ascending order, with three digits
- * You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
- * You can only use putchar six times maximum in your code
- * You are not allowed to use any variable of type char
- * All your code should be in the main function
- * return: 0
- */ 
+ *  * main - Prints 3 combination of numbers
+ *   *
+ *    * Return: Always (Success)
+ *     */
 int main(void)
 {
-	int c;
-	int d;
-	int e = 0;
+		int c, i, k;
 
-	while (e < 10)
-	{
-		d = 0;
-		while (d < 10)
-		{
-			if (c != d && d != e < d && d < c)
-			{
-				putchar('0' + e);
-				putchar('e' + d);
-				putchar('e' + c);
+			for (c = '0'; c <= '9'; c++)
+					{
+								for (i = '0'; i <= '9'; i++)
+											{
+															for (k = '0'; k <= '9'; k++)
+																			{
+																								if (c < i && i < k)
+																													{
+																																			putchar(c);
+																																								putchar(i);
+																																													putchar(k);
 
-				if (c + d +e != 9 +8 +7)
-				{ 
-					putchart(',');
-					putchart(' ');
-				}
-
-			}
-			c++;
-	                           
-		}
-		d++;
-	}
-	e++;
-   
-    }
-    putchar('\n');
-    return (0);
+																																																		if (c != '7')
+																																																								{
+																																																															putchar(',');
+																																																																					putchar(' ');
+																																																																										}
+																																																						}
+																											}
+																	}
+									}
+				putchar('\n');
+					return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
-						
