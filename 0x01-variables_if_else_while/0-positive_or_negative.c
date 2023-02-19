@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *   main - dertmine if a number is negative or positive
- *   
+ *   main - main block
+ *   Description: Get a random numder and print the number
+ *   and if it is positive, negative, or zero
  *   Return: Always 0 (success)
 */
 
