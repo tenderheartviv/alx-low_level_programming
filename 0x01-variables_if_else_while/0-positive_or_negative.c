@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *   main - Entry point
+ *   main - dertmine if a number is negative or positive
  *   
  *   Return: Always 0 (success)
 */
@@ -13,7 +13,7 @@ int main(void)
 	int n;
 	
 	srand(time(0));
-	n= rand() -RAND_MAX / 2;
+	n = rand() - RAND_MAX / 2;
 	
 	if (n > 0)
 	{
