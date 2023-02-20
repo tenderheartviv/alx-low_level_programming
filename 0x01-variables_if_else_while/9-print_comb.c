@@ -1,22 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - main block
- * Description: prints all single number of base 10
- * stating from 0, followed by a new line 
- * Return: 0
+ * main - prints numbers from 0 to 9 separated by a coma followed by a space
+ * 
+ * Return: Always 0 (success)
+ * 
  */
-int main(void)
-{
-	int c = 0;
 
-	while (c < 10)
-	{
-		putchar(48 + c);
-		if (c !=9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		c++;
-	}
+int main(void)
+
+{
+			int num = '0';
+
+						while (num <= '9')
+												{
+																					putchar(num);
+																															if (num != '9')
+																																													{
+																																																															putchar(',');
+																																																																																			putchar(' ');
+																																																																																																									}
+																																											num++;
+																																																								}
+										putchar('\n');
+															return (0);
+
+}
