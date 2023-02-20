@@ -1,35 +1,38 @@
-include <stdio.h>
+#include <stdio.h>
 
 /**
- *  * main - Prints 3 combination of numbers
- *   *
- *    * Return: Always (Success)
- *     */
+ * main -  prints all possible different combinations of three digits.
+ * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-		int c, i, k;
+			int ones = '0';
+						int tens = '0';
+										int hundreds = '0';
 
-			for (c = '0'; c <= '9'; c++)
-					{
-								for (i = '0'; i <= '9'; i++)
-											{
-															for (k = '0'; k <= '9'; k++)
-																			{
-																								if (c < i && i < k)
-																													{
-																																			putchar(c);
-																																								putchar(i);
-																																													putchar(k);
-
-																																																		if (c != '7')
-																																																								{
-																																																															putchar(',');
-																																																																					putchar(' ');
-																																																																										}
-																																																						}
-																											}
-																	}
-									}
-				putchar('\n');
-					return (0);
+															for (hundreds = '0'; hundreds <= '9'; hundreds++)
+																							{
+																																		for (tens = '0'; tens <= '9'; tens++)
+																																																{
+																																																																		for (ones = '0'; ones <= '9'; ones++)
+																																																																																								{
+																																																																																																																			if (!((ones == tens) || (tens == hundreds) || 
+																																																																																																																																																										(tens > ones) || (hundreds > tens))) /*eliminates repitition*/
+																																																																																																																																																			{
+																																																																																																																																																																																									putchar(hundreds);
+																																																																																																																																																																																																																																			putchar(tens);
+																																																																																																																																																																																																																																																																																		putchar(ones);
+																																																																																																																																																																																																																																																																																																																																						if (!(ones == '9' && hundreds == '7' && 
+																																																																																																																																																																																																																																																																																																																																																																																																								tens == '8')) /*adds commas and spaces*/
+																																																																																																																																																																																																																																																																																																																																																																																																	{
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																			putchar(',');
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										putchar(' ');
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						}
+																																																																																																																																																																																																																																																																																																																																																																																														}
+																																																																																																																																																}
+																																																																																					}
+																																													}
+																					putchar('\n');
+																												return (0);
 }
