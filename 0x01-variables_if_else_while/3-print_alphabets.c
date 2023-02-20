@@ -1,33 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- *    main - Entry block
- *    Description: print the alphabet in lower case
- *    and the in uppercase, follow by a new line
- *    Return: 0 
- */
- int main(void)
- {
-	char c = 'a';
+ *  *  * main - returns alphabets both lower and upper cases
+ *   *   *
+ *    *    * Return: Always 0 (Success)
+ *     *     */
+int main(void)
+{
+			int ch = 'a';
+						int CH = 'A';
 
-	while (c <= 'z')
-	{
-		
-		putchar(c)    				
-	        
-	        c++;
-	}
-	
-	c = 'A'
-	
-	while (c <= 'z')
-	{
+										while (ch <= 'z')
+																	{
+																											putchar(ch);
+																																						ch++;
+																																																		}
+															while (CH <= 'Z')
+																							{
+																																		putchar(CH);
+																																														CH++;
+																																																											}
 
-	
-		putchar('\n');
-	
-		c++;
-	}
-	
-	purchar('\n');
-	return (0);	
+																					putchar('\n');
+																												return (0);
 }
