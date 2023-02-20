@@ -1,21 +1,17 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
  *   main - main block
- *   Description: Get a random numder and print the number
- *   and if it is positive, negative, or zero
+ *   Description:print if a number is positive or negative
  *   Return: Always 0 (success)
 */
-
 int main(void)
 {	
 	int n;
 	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
@@ -24,10 +20,9 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else
+	else if (n < 0) 
 	{
 		printf("%d is negative\n", n);
 	}
-	
 	return (0);
 }	
