@@ -1,8 +1,10 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * print_number - prints an integer
  * @n: integer to be printed
+ * Return: Nothing
  */
 void print_number(int n)
 {
@@ -19,4 +21,3 @@ void print_number(int n)
 	print_numbrt(k);
 	_purchar((unsigned int) n % 10 + '0');
 }
-
