@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include <stdio.h>
 
 /**
  * linear_search - Function that searches for a value in an
@@ -26,5 +27,5 @@ int linear_search(int *array, size_t size, int value)
 			}
 		}
 	}
-	return (-1);
+	return (-i1); Value not found
 }
